@@ -13,7 +13,7 @@ const SingleChef = () => {
     useEffect(() => {
         const getRecipes = async () => {
             const response = await fetch(
-                'http://localhost:3000/recipes'
+                'https://chef-s-palette-server-nurmurad32.vercel.app/recipes'
             );
             const data = await response.json();
             const recipes = data.filter(n => parseInt(n.chef_id) === id);

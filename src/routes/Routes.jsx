@@ -20,12 +20,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:3000/chefs')
+        loader: () => fetch('https://chef-s-palette-server-nurmurad32.vercel.app/chefs')
       },
       {
         path: "/chefs/:id",
         element:  <PrivateRoute><SingleChefs></SingleChefs></PrivateRoute> ,
-        loader: ({params}) => fetch(`http://localhost:3000/chefs/${params.id}`)
+        loader: ({params}) => fetch(`https://chef-s-palette-server-nurmurad32.vercel.app/chefs/${params.id}`)
       },
       {
         path: "/blogs",

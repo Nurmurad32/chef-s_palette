@@ -18,7 +18,7 @@ const Chef = ({ chef }) => {
                     </div>
                 </div>
                 <p className='card-footer mb-0 text-center'>
-                    <a href={`/chefs/${id}`}>View Recipes</a>
+                    <a style={{textDecoration:'none'}} href={`/chefs/${id}`}>View Recipes</a>
                 </p>
             </div>
         </div>
