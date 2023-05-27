@@ -36,7 +36,7 @@ const Register = () => {
     }
     return (
         <div className='w-25 mx-auto'>
-            <h2>Register Page</h2>
+            <h2 className='text-center mt-5 mb-5'>Complete Your Registration here</h2>
             <p className='text-success'>{success}</p>
             <p className='text-danger'>{errors}</p>
             <form onSubmit={handleRegistration}>
@@ -57,8 +57,10 @@ const Register = () => {
                     <input type="password" name='password' className="form-control" id="exampleInputPassword1" required />
                 </div>
 
-                <button type="submit" className="btn btn-primary">Register</button>
-                <p className="text-secondary">
+                <div className='text-center mt-3 mb-5'>
+                    <button type="submit" className="brand-btn" style={{width:"40%"}}>Register</button>
+                </div>
+                <p className="text-secondary text-center mb-5">
                     Already have an Account?<Link to="/login">Login</Link>
                 </p>
 

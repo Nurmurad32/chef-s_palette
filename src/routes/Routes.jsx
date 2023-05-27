@@ -10,6 +10,7 @@ import Register from '../pages/home/Register';
 import SingleChefs from '../pages/home/SingleChef'
 import PrivateRoute from './PrivateRoute';
 import NotFound from '../pages/NotFound/NotFound';
+import Blogs from '../pages/home/Blogs';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         path: "/chefs/:id",
         element:  <PrivateRoute><SingleChefs></SingleChefs></PrivateRoute> ,
         loader: ({params}) => fetch(`http://localhost:3000/chefs/${params.id}`)
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>
       },
       {
         path: "/login",
