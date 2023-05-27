@@ -2,10 +2,10 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div>
+        <div className='container'>
             <h2 className='text-center mt-5 mb-5'>Blogs</h2>
             <div>
-                <h3>1. Tell us the differences between uncontrolled and controlled components.</h3>
+                <h3>Tell us the differences between uncontrolled and controlled components.</h3>
                 <ul>
                     <li>
                         <p><strong> Uncontrolled Components:</strong><br />
@@ -59,6 +59,20 @@ const Blogs = () => {
                             </p>
                         </li>
                     </ul>
+                </p>
+            </div>
+            <div>
+                <h3>What is a custom hook, and why will you create a custom hook?</h3>
+                <p>
+                    Custom hooks allow you to extract and share common stateful or side-effectful logic from components, making your code more modular, reusable, and easier to maintain. Here are a few reasons why you might create a custom hook:
+                    <ul>
+                        <li>Code Reusability: If you find yourself repeating the same logic in multiple components, creating a custom hook allows you to encapsulate that logic into a single function. You can then reuse the custom hook across different components, promoting code reusability.</li>
+                        <li>Abstraction and Encapsulation: Custom hooks enable you to abstract complex or repetitive logic into a single function. This abstraction helps to separate concerns, making your components cleaner and more focused on their specific responsibilities.</li>
+                        <li>Improved Readability: By extracting logic into a custom hook, you can declutter your components and make them more readable. The custom hook serves as a self-contained unit of logic that can be easily understood and reused.</li>
+                        <li>Testing: Custom hooks make testing easier since you can test the hook independently of the components that use it. This facilitates more focused and comprehensive unit testing.</li>
+                        <li>Sharing Logic across Projects: Custom hooks can be shared across different projects or within a team, allowing developers to leverage existing solutions and accelerate development.</li>
+                    </ul>
+                    Creating custom hooks is a powerful technique in React development that promotes code reuse, abstraction, and separation of concerns. They enable you to extract and share common logic, enhancing the maintainability and scalability of your React applications.
                 </p>
             </div>
         </div>
