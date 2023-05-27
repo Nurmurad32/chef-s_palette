@@ -9,6 +9,7 @@ import Login from '../pages/home/Login';
 import Register from '../pages/home/Register';
 import SingleChefs from '../pages/home/SingleChef'
 import PrivateRoute from './PrivateRoute';
+import NotFound from '../pages/NotFound/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+    path: "*",
+    element: <NotFound></NotFound>
+  }
 ]);
 
 export default router;

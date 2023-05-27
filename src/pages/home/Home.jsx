@@ -46,18 +46,6 @@ const Home = () => {
                                         <h5><a href="#">of our winery</a></h5>
                                     </div>
                                 </li>
-                                <li><i className="icon-food-1"></i>
-                                    <div className="kode-link-hd">
-                                        <h5>Our Dishes Are</h5>
-                                        <h5><a href="#">Made With Love</a></h5>
-                                    </div>
-                                </li>
-                                <li><i className="icon-food-1"></i>
-                                    <div className="kode-link-hd">
-                                        <h5>Our Dishes Are</h5>
-                                        <h5><a href="#">Made With Love</a></h5>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                     </div>

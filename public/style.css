@@ -1,3 +1,32 @@
+.brand-btn{
+    border: 1px solid #E4996D;
+    padding: 5px 15px;
+    background-color: #E4996D;
+    border-radius: 5px;
+}
+.brand-btn:hover{
+    border: 1px solid #f6b38c;
+    background-color: #f6b38c;
+}
+
+
+/* ------------------------------------
+              Nav style
+------------------------------------- */
+.nav-container ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+    font-weight: 500;
+}
+.nav-container ul li a:hover{
+    color: #E4996D;
+}
+.nav-container ul li{
+    margin-right: 10px;
+    color: black;
+    font-weight: 500;
+}
 /* ------------------------------------
               Banner style
 ------------------------------------- */
@@ -30,7 +59,7 @@
     width: 100%;
 }
 .kode-food-meta li {
-    float: left;
+    /* float: left; */
     width: 50%;
     padding: 10px 0px;
     list-style: none;
