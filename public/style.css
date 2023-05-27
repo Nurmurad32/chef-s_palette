@@ -1,10 +1,11 @@
-.brand-btn{
+.brand-btn {
     border: 1px solid #E4996D;
     padding: 5px 15px;
     background-color: #E4996D;
     border-radius: 5px;
 }
-.brand-btn:hover{
+
+.brand-btn:hover {
     border: 1px solid #f6b38c;
     background-color: #f6b38c;
 }
@@ -13,20 +14,23 @@
 /* ------------------------------------
               Nav style
 ------------------------------------- */
-.nav-container ul li a{
+.nav-container ul li a {
     text-decoration: none;
     margin-right: 10px;
     color: black;
     font-weight: 500;
 }
-.nav-container ul li a:hover{
+
+.nav-container ul li a:hover {
     color: #E4996D;
 }
-.nav-container ul li{
+
+.nav-container ul li {
     margin-right: 10px;
     color: black;
     font-weight: 500;
 }
+
 /* ------------------------------------
               Banner style
 ------------------------------------- */
@@ -48,7 +52,7 @@
         home-second-section style
 ------------------------------------- */
 
-.home-second-text{
+.home-second-text {
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -58,12 +62,14 @@
     float: left;
     width: 100%;
 }
+
 .kode-food-meta li {
     /* float: left; */
     width: 50%;
     padding: 10px 0px;
     list-style: none;
 }
+
 .kode-food-meta li i {
     border-color: #be951f !important;
     float: left;
@@ -76,6 +82,7 @@
     text-align: center;
     z-index: 1;
 }
+
 .kode-link-hd {
     float: none;
     overflow: hidden;
@@ -86,7 +93,7 @@
 /* ------------------------------------
         recipe Card style
 ------------------------------------- */
-.fav-btn{
+.fav-btn {
     padding: 0px;
     background-color: white;
     border: none;
@@ -98,16 +105,18 @@
 /* ------------------------------------
         Testimonial Card style
 ------------------------------------- */
-.testimonial-card{
+.testimonial-card {
     margin-right: 20px;
 }
-.testimonial-card img{
+
+.testimonial-card img {
     height: 100px;
     width: 100px;
     margin: 20px auto;
     border-radius: 50%;
     border: none !important;
 }
+
 /* ------------------------------------
               Footer style
 ------------------------------------- */
@@ -122,4 +131,22 @@
     align-items: center;
     margin-bottom: 0px;
     padding: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .banner-container{
+        padding-top: 40%;
+    }
+    .banner-container p{
+        width: 95%;
+    }
+    .chef-card {
+        min-width: auto !important;
+    }
+
+    .chef-card-col-4 {
+        margin: 0 auto;
+        display: flex;
+    }
 }

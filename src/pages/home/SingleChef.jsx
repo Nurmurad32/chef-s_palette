@@ -24,9 +24,9 @@ const SingleChef = () => {
 
     return (
         <div className='container'>
-            <div className="card mb-3 mx-auto mt-5 mb-5" style={{ minWidth: '540px', maxWidth: '800px' }}>
+            <div className="card mb-3 mx-auto mt-5 mb-5 chef-card" style={{ minWidth: '540px', maxWidth: '800px' }}>
                 <div className="row g-0">
-                    <div className="col-md-4">
+                    <div className="col-md-4 chef-card-col-4">
                         <img src={image} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div className="col-md-8">
