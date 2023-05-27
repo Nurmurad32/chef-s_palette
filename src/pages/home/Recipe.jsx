@@ -6,9 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const Recipe = ({ recip }) => {
     const notify = () => toast("Added to your favourite list!");
 
-    const [toasts , setToasts ] = useState(true)
-    
-    const handelToast = (t) =>{
+    const [toasts, setToasts] = useState(true)
+
+    const handelToast = (t) => {
         setToasts(t)
         console.log(toasts)
         notify();
@@ -20,14 +20,15 @@ const Recipe = ({ recip }) => {
     return (
         <div className="col">
             <div className="card">
-            <ToastContainer />
-                <img src={recipe_image} className="card-img-top" alt="..." />
+                <ToastContainer />
+                <img style={{ height: '300px' }} src={recipe_image} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <div className='d-flex'>
+                    <div className='d-flex justify-content-between align-items-center'>
                         <h5 className="card-title">{name}</h5>
-                        <p className="card-text">{rating}</p>
-                        <button onClick={()=>handelToast(!toasts)} disabled={!toasts}><GrFavorite ></GrFavorite></button>
-                        
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <p className="card-text">Ratings: {rating}</p>
+                            <button className='fav-btn' onClick={() => handelToast(!toasts)} disabled={!toasts}><GrFavorite ></GrFavorite></button>
+                        </div>
                     </div>
                     <div>
                         <p className="card-text">Ingredients:</p>
@@ -39,7 +40,7 @@ const Recipe = ({ recip }) => {
                     </div>
                     <div>
                         <p>Cooking Methods:</p>
-                        <p style={{whiteSpace: 'pre-line'}}>{cooking_method}</p>
+                        <p style={{ whiteSpace: 'pre-line' }}>{cooking_method}</p>
                     </div>
 
                 </div>

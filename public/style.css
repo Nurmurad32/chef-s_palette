@@ -83,6 +83,16 @@
     margin-top: 5px;
 }
 
+/* ------------------------------------
+        recipe Card style
+------------------------------------- */
+.fav-btn{
+    padding: 0px;
+    background-color: white;
+    border: none;
+    margin-top: -16px;
+    margin-left: 20px;
+}
 
 
 /* ------------------------------------

@@ -24,7 +24,7 @@ const SingleChef = () => {
 
     return (
         <div className='container'>
-            <div className="card mb-3 mx-auto" style={{ minWidth: '540px', maxWidth: '800px' }}>
+            <div className="card mb-3 mx-auto mt-5 mb-5" style={{ minWidth: '540px', maxWidth: '800px' }}>
                 <div className="row g-0">
                     <div className="col-md-4">
                         <img src={image} className="img-fluid rounded-start" alt="..." />
@@ -42,7 +42,7 @@ const SingleChef = () => {
                     </div>
                 </div>
             </div>
-            <div className="row row-cols-1 row-cols-md-2 g-4 mx-auto">
+            <div className="row row-cols-1 row-cols-md-2 g-4 mx-auto mb-5">
                 {
                     recipe ? recipe.map(recip => <Recipe recip={recip}></Recipe>) : null}
             </div>
