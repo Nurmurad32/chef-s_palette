@@ -4,10 +4,10 @@ const Testimonial = () => {
     return (
         <section className=' text-center' style={{ backgroundColor: '#F2ECE0' , padding: '100px 0px' }}>
                 <h2 className='pb-5'>
-                    What Customers Are Saying
+                    What Customers Are Saying <br />
                     About Us
                 </h2>
-                <div className='container d-flex justify-content-center'>
+                <div className='container d-flex justify-content-center testimonial-container'>
                     <div className="card testimonial-card" style={{width: "18rem" , border: 'none'}}>
                         <img src="https://alanzo.ancorathemes.com/wp-content/uploads/2017/09/testi-3-150x150.jpg" className="card-img-top" alt="..." />
                             <div className="card-body">

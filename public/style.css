@@ -149,4 +149,11 @@
         margin: 0 auto;
         display: flex;
     }
+    .testimonial-container{
+        display: block !important;
+    }
+    .testimonial-card{
+        margin: 0 auto;
+    margin-bottom: 20px;
+    }
 }
