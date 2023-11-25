@@ -1,11 +1,21 @@
-import React from 'react';
-import notFound from '../../assets/notFound.jpg'
+import { useLottie } from "lottie-react";
+import nFoundAni from "../../assets/animation/notFoundAnimation.json";
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
+    
+    const options = {
+        animationData: nFoundAni,
+        loop: true
+    };
+
+    const { View } = useLottie(options);
     return (
-        <div style={{backgroundColor: "#F9F9F9", margin:' 0 auto', textAlign: 'center', height:'500px'}}>
-            <img src={notFound} alt="" />
-            <p>The page you are trying to reach does not exist</p>
+        <div className='d-flex flex-column justify-content-center align-items-center' style={{ height: "100vh" }}>
+            <p className='anima'>
+                {View}
+            </p>
+            <button className='brand-btn'><Link to="/" className='text-decoration-none text-white'>Go to Home</Link></button>
         </div>
     );
 };

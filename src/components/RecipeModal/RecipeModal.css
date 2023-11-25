@@ -1,0 +1,9 @@
+#contained-modal-title-vcenter{
+    width: 95%;
+}
+.btn-close{
+    margin-left: 0px !important;
+}
+.modal-header{
+    justify-content: center !important;
+}

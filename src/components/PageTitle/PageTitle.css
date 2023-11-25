@@ -1,0 +1,13 @@
+.anim svg {
+  width: 200px !important;
+}
+
+@media (max-width: 576px) {
+    .title-section{
+        margin-top: 15px;
+    }
+    .title-section-col{
+        justify-content: center !important;
+    }
+
+}

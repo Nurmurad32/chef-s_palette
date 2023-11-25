@@ -1,0 +1,222 @@
+body {
+  font-family: "Laila", serif;
+}
+.brand-color{
+  color: #e6151c;
+}
+.brand-color:hover{
+  color: #f76a6f;
+}
+.brand-btn {
+  border: 1px solid #e6151c;
+  padding: 5px 15px;
+  background-color: #e6151c;
+  border-radius: 5px;
+  color: white;
+}
+
+.brand-btn:hover {
+  border: 1px solid #e6151c9c;
+  background-color: #e6151c9c;
+}
+
+.underline {
+  position: relative;
+}
+.underline:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    bottom: -10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: rgb(230, 21, 28);
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.underlineHome {
+  position: relative;
+}
+.underlineHome:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    bottom: -10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 15%;
+    background: rgb(230, 21, 28);
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* ------------------------------------
+              Nav style
+------------------------------------- */
+.user-small-device{
+    display: none;
+}
+
+.nav-container ul li a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-container ul li a:hover {
+  color: #e6151c;
+}
+
+.nav-container ul li {
+  margin-right: 10px;
+  color: black;
+  font-weight: 500;
+}
+#nav-dropdown svg {
+  font-size: 25px;
+  color: black;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* ------------------------------------
+        home-second-section style
+------------------------------------- */
+/* 
+.home-second-text {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.kode-food-meta {
+  float: left;
+  width: 100%;
+}
+
+.kode-food-meta li {
+  width: 50%;
+  padding: 10px 0px;
+  list-style: none;
+}
+
+.kode-food-meta li i {
+  border-color: #be951f !important;
+  float: left;
+  width: 80px;
+  height: 66px;
+  font-size: 35px;
+  line-height: 66px;
+  border: 1px solid;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.kode-link-hd {
+  float: none;
+  overflow: hidden;
+  padding: 0 15px;
+  margin-top: 5px;
+} */
+
+/* ------------------------------------
+        recipe Card style
+------------------------------------- */
+/* .fav-btn {
+  padding: 0px;
+  background-color: white;
+  border: none;
+  margin-top: -16px;
+  margin-left: 20px;
+} */
+
+/* ------------------------------------
+        Testimonial Card style
+------------------------------------- */
+/* .testimonial-card {
+  margin-right: 20px;
+}
+
+.testimonial-card img {
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: none !important;
+} */
+
+/* ------------------------------------
+              Footer style
+------------------------------------- */
+/* .footer-container {
+  background-color: #ffba5e;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  padding: 10px;
+} */
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .navbar {
+    min-height: 80px;
+  }
+  .nav-section {
+    flex-direction: row-reverse !important;
+  }
+  .nav-left{
+    text-align: right !important;
+  }
+  .nav-right {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+  }
+  .user-small-device {
+    display: block !important;
+  }
+  .user-large-device {
+    display: none;
+  }
+  .banner-container {
+    padding-top: 40%;
+  }
+  .banner-container p {
+    width: 95%;
+  }
+  .chef-card {
+    min-width: auto !important;
+  }
+
+  .chef-card-col-4 {
+    margin: 0 auto;
+    display: flex;
+  }
+  .aboutImg{
+    display: none !important;
+  }
+  .swiper-slide div{
+    width: 100% !important;
+  }
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+    top: 446px !important;
+  }
+}

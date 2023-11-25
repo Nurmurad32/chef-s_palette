@@ -1,0 +1,7 @@
+.rr--group{
+    width: 30% !important;
+}
+.recipeDetails:hover {
+    cursor: pointer;
+    color: #e6151c !important;
+}

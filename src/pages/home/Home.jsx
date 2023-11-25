@@ -1,62 +1,55 @@
-import React from 'react';
-import Testimonial from './Testimonial';
-import { useLoaderData } from 'react-router-dom';
-import Chef from './Chef';
-import { MdOutlineFastfood } from "react-icons/md";
+import BannerSwipper from './HomeComponent/BannerSwipper';
+import ChefsSwiper from './HomeComponent/ChefsSwiper';
+import HomeCategories from './HomeComponent/HomeCategories';
+import WhoWeAre from './HomeComponent/WhoWeAre';
+import HomeRecipes from './HomeComponent/HomeRecipes';
+import { useContext } from 'react';
+import { AuthContext } from '../../providers/AuthProviders';
+import LoadingPage from '../../components/LoadingPage/LoadingPage';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
-    const chefs = useLoaderData();
-    console.log(chefs)
+    const { loading } = useContext(AuthContext);
+    if (loading) {
+        return <LoadingPage />
+    }
+
+
     return (
         <div>
-            {/* =================================================================
-                                       banner section 
-            =================================================================*/}
-            <section className='banner-section'>
-                <div className='banner-container d-flex flex-column align-items-center text-white m-auto '>
-                    <h4>Welcome to Chef's Palette</h4>
-                    <h1>Amazing & Delicious Food</h1>
-                    <p className='w-50 text-center'>Food Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsam obcaecati inventore cum. Laudantium delectus necessitatibus fugiat pariatur nemo minima?</p>
-                    <button type="button" className="btn btn-outline-warning">More Info </button>
-                </div>
-
-            </section>
-            {/* =================================================================
-                                       Home Second Section 
-            =================================================================*/}
-            <section className='home-second-section container'>
-                <div className='row home-second-container'>
-                    <div className='col-md-4 d-flex justify-content-center'>
-                        <img className='' style={{height:'500px', width:'auto'}} src="http://kodeforest.net/wp-demo/foodcourt/wp-content/uploads/2016/06/we-are.png" alt="" />
-                    </div>
-                    <div className='col-md-8 home-second-text'>
-                        <h3>Who <b>We Are ?</b></h3>
-                        <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-
-                    </div>
-                </div>
-            </section>
-            {/* =================================================================
-                                       Chef Section 
-            =================================================================*/}
-            <section className='container mt-5 mb-5'>
-                <h2 className='text-center'>Meet Our Expert Chefs</h2>
-                <div className="row row-cols-1 row-cols-md-3 g-4">
-                    {
-                        chefs.map(chef => <Chef
-                            key={chef.id}
-                            chef={chef}
-                        ></Chef>)
-                    }
-                </div>
-
-
+            <Helmet>
+                <title>Home || Chef's Palette</title>
+            </Helmet>
+            <section className='mb-5 mt-1'>
+                <BannerSwipper></BannerSwipper>
             </section>
 
-            {/* =================================================================
-                                       Testimonial Section 
-            =================================================================*/}
-            <Testimonial></Testimonial>
+            {/* -------------------- Category Section ---------------------------*/}
+
+            <section className='container my-5'>
+                <h2 className='text-center mt-5 underlineHome'>Our Recipe Categories</h2>
+                <HomeCategories></HomeCategories>
+            </section>
+
+            {/* -------------------- About Us Section-----------------------------*/}
+
+            <section className='container my-5'>
+                <h2 className='text-center underlineHome mb-5 mt-3' >Who <b>We Are ?</b></h2>
+                <WhoWeAre></WhoWeAre>
+            </section>
+
+            {/* --------------------Chef Section-----------------------------*/}
+
+            <section className='container my-5'>
+                <h2 className='text-center underlineHome' >Meet Our Expert Chefs</h2>
+                <ChefsSwiper></ChefsSwiper>
+            </section>
+
+            {/* --------------------Recipe Section-----------------------------*/}
+
+            <section className='container my-5'>
+                <HomeRecipes></HomeRecipes>
+            </section>
 
         </div>
     );

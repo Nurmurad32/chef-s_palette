@@ -1,0 +1,31 @@
+.dropdown-bookmarked {
+}
+.dropdown-bookmarked-content {
+    display: none;
+    top: 25px;
+    left: -250px;
+    border: 2px solid #e6151c;
+    border-radius: 5px;
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+.dropdown-bookmarked-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #e6151c;
+  color: black;
+}
+
+.dropdown-bookmarked-content a:hover {
+}
+
+.dropdown-bookmarked:hover .dropdown-bookmarked-content {
+    display: block;
+}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
