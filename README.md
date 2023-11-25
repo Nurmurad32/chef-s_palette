@@ -4,9 +4,6 @@
 This is a recipe website that shows the recipes of all available chef's. 
 
 
-### b7a10-chef-recipe-hunter-client-side-Nurmurad32
-
-
 >
 >Live URL : [chef's palette](https://chef-s-palette.web.app/)
 >
@@ -14,9 +11,9 @@ This is a recipe website that shows the recipes of all available chef's.
 
 >GitHub Link:
 >
->> Client Side Code :
+>> Client Side Code : [chef's palette Client Side Code](https://github.com/Nurmurad32/chef-s_palette)
 >>
->> Server Side Code :
+>> Server Side Code : [chef's palette Server Side Code](https://github.com/Nurmurad32/chef-s_palette_server)
 
 
 
